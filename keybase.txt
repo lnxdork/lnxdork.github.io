@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/lnxdork
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://lnxdork.com
+  * I am lnxdork (https://keybase.io/lnxdork) on keybase.
+  * I have a public key with fingerprint FE48 8763 F66E 2B8E E908  19C0 C025 9566 674E 7BAA
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01016991b4e82dc5f6d9c500fbd9ef80f73871e283f3aea546170daf3c35e8d7ca670a",
+      "fingerprint": "fe488763f66e2b8ee90819c0c0259566674e7baa",
+      "host": "keybase.io",
+      "key_id": "c0259566674e7baa",
+      "kid": "01016991b4e82dc5f6d9c500fbd9ef80f73871e283f3aea546170daf3c35e8d7ca670a",
+      "uid": "b00a85a4e3bf89c437f641c5f28eb019",
+      "username": "lnxdork"
+    },
+    "service": {
+      "hostname": "lnxdork.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1551042490,
+  "expire_in": 157680000,
+  "prev": "06ff953d28deddee7593d02d9e927e0d51aeb1073f61b66e62ae83e4fcbd2f57",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.0
+Comment: https://keybase.io/crypto
+
+yMIgAnicrVJbSBRRGF7TvKWoIOUtsgFLarMz9xmzEo0yQUSENLDWmTn/rJPuzro7
+2opJVpbdTCx6iTBfUpTIeskuBmmSoojlhV7yJSLCJ60glJTOSD0EPXZeDuc/3/ed
+7//+MxIb6ogOSVyk+77I/akhE0O36xwVgYjnjZRq4gYqu5GqhvUNajAELFe1gals
+CtGIFmSZVjmQGKzxuoBljUdIV7EMuoR0kZVEGhiJ1VkFFJ4TaBFhRWc1lgcJi5oi
+iEihnJRueN3g9/kNr0VkdeAkSRRYXRCAUSUAGUm0rCENMbzMC4IgciCqik2sMgM2
+g5hTlQBkGSapkYNr3d4/8P/Zd926nIqQIvEKB6yqS7LGsaIucDSRZSRQES3bwAD4
+vYoHCLrGG8Smv5pqclKkWG9oYOdqN/I3IEszPYTp85uWqZk15KLKsnzZNs9q8NnA
+06C6fku4VMOLSYiEUA/+gGF6qWyaIDXLsDVpnqcRx3AyclIQ9Bl+cBk2ghcFCZFl
+PwP1djKCrss8ixkJA8YAIi+zGDEkFpkRAWGeVkClkUhmQ6tkPAKjgMQCp2sqZnRe
+pOymar0m0aaJT8VNNAOG26tYdX6gmoZfVYQ5QqId4Rs32L/LER0V/+fPaT8jVlPn
+stLy21qCny23sySZimM+pB2+n/OpZSH4+lFeCted8SDyRH4Ozlxa9Ri5b4VAeQ+T
++ORMT2FxZ8qtZVO/vL93y8e4haTZvoejnVWe7acGM6tHijfFTIYdu+acvX7Ip5Uf
+mEtnnDOdSZ6Ek92D7h/L8f1FRQcTk3HBvfAbZ9MnS6mtY91fO+KjLqwtxbz0BYfU
+qZXH+YXD7ez8jt0d5U8z36FzU8q+4t7GnSUZu84fudMT+WzFvHl8NC90JrYyQW4f
+aJ4eSCpbswrKUrrGu6ZjamO655mrS2ty8vs3L5pb7raNd81tDh9b+q59u7J3+FJu
+61HBsW1iT+tiR2Xp4MVfpPU4Wg==
+=zQz9
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lnxdork
+
+==================================================================
