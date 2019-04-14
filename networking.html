@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>lnxdork</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="lnxdork: information security workhorse">
+    <link rel="icon" href="images/lnxdork_50pct.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/code.css">
+</head>
+
+<body id="top">
+    <header>
+        <h2><a href="https://lnxdork.com" target="_blank">lndxork</a></h2>
+        <nav>
+            <ul>
+                <li><a href="#_blank">Top</a></li>
+                <li><a href="https://lnxdork.com">Home</a></li>
+                <li><a href="#social-media">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- ******************************** -->
+<div id="blog">
+    <h3 class="title">Networking</h3>
+<h4>Networking from the Fedora 29 command line.</h4>
+NetworkManager is a GUI, <code>nmcli</code> is the command line application for NetworkManager.<br> 
+Typing <code>nmcli</code> and hitting return or enter provides information about devices, their addresses, and DNS configuration. 
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code">$ nmcli</div>
+</div>
+Typing <code>nmcli [tab] [tab]</code> will give the information about what options are available for nmcli.
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code">$ nmcli [tab][tab]</div>
+</div> 
+Remember <code>[tab] [tab]</code> after the command is your friend and will show appropriate options.<br>
+Entering nmcli device and nmcli device status will return the same information about network devices and their connection state.
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code">$ nmcli device</div>
+    <div class="text code">$ nmcli device status</div>
+</div> 
+Entering <code>nmcli connection show</code> provides an even more detailed view of the devices and their connection state.
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code">$ nmcli connection show</div>
+</div> 
+To enable an existing connection:
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code"># nmcli connection up [NAME]</div>
+</div> 
+To disable an existing connection:
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code"># nmcli connection down [NAME]</div>
+</div>
+<h4>Talking about wireless or wifi</h4>
+Entering <code>nmcli radio</code> will display various wifi devices.<br>
+So, <code>nmcli radio wifi</code> will display the wifi status, and <code>nmcli radio wifi on</code> or <code>nmcli radio wifi off</code> will enable or disable the radio.<br> 
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code">$ nmcli radio wifi</div>
+    <div class="text code">$ nmcli radio wifi on</div>
+    <div class="text code">$ nmcli radio wifi off</div>
+</div>
+To see a list of wireless networks: 
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:435px;">
+    <div class="text code">$ nmcli device wifi list</div>
+</div> 
+To connect: 
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:475px;">
+    <div class="text code"># nmcli device wifi connect [SSID] password [PASSWORD]</div>
+</div>
+A helpful 1 liner:
+<div class="code-container text default" style="overflow:auto;white-space:nowrap;width:475px;">
+    <div class="text code">$ nmcli -f in-use,ssid,bssid,rate,signal,bars  dev wifi</div>
+</div> 
+
+<hr>
+</div>
+<!-- ******************************** -->
+    <footer id="social-media">
+        <ul>
+            <li><a href="https://twitter.com/lnxdork" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://github.com/lnxdork" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://pinterest.com/lnxdork" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+            <li><a href="https://keybase.io/lnxdork" target="_blank"><i class="fab fa-keybase"></i></a></li>
+        </ul>
+        <p> &copy; <script>
+                document.write(new Date().getFullYear());
+            </script> lnxdork
+        </p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

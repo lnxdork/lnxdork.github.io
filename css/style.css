@@ -107,6 +107,11 @@ header nav li:last-child {
   }
 }
 
+#blog {
+  margin-top: 100px;
+  padding: 30px;
+}
+
 #hero {
   background: white;
   color: black;
