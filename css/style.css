@@ -109,6 +109,7 @@ header nav li:last-child {
 
 #blog {
   margin-top: 100px;
+  text-align: left;
   padding: 30px;
 }
 
