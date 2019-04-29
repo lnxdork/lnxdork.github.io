@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>lnxdork</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="lnxdork: information security workhorse">
+    <link rel="icon" href="/images/lnxdork_50pct.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/code.css">
+</head>
+
+<body id="top">
+    <header>
+        <h2><a href="https://lnxdork.com" target="_blank">lndxork</a></h2>
+        <nav>
+            <ul>
+                <li><a href="#_blank">Top</a></li>
+                <li><a href="https://lnxdork.com">Home</a></li>
+                <li><a href="posts.html">Blog</a></li>
+                <li><a href="#social-media">Links</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- ******************************** -->
+<div id="blog">
+    <h3 class="title">Architecture</h3>
+    <div class="time">Sunday, April 28, 2019</div><br>
+<h4>DevOps + Security: DevSecOps</h4><br>
+There are a couple of things that I preach; they may be off the beaten path for security.<br>
+Keep it simple. Secure all the things the same way.<br>
+I don't like to build snowflakes. Let's build it once and re-use that process.<br>
+So, follow the same simple process for the daily online lunch menu, or for exchanging PII between systems.<br>
+Secure baseline, hardened config, and make it repeatable.<br>
+Generate unique keys for everything and secure all data-in-transit.<br>
+Log all the things. This allows people and systems to monitor the things they care about. <br>
+<br>
+As they say, the devil is in the details; what do I mean when I say secure baseline? <br>
+<li>1. Start lean, install only the minimal things required to run. This keeps it small, light, and to use a loaded word, agile. This reduced footprint is ideal for performance and security. </li>
+<li>2. Restrict things, people, services and systems you DO NOT WANT.</li> 
+<li>3. Add what you need, nothing more, nothing less.</li>
+<li>4. Software-defined builds, build early build often.</li>          
+<br>
+Hardened config is building on top of the secure baseline line item #3.<br>
+Add what you need and make sure we are not introducing unintended risk.<br>
+<li>1. Run the processes you want separate from the underlying system.</li>
+<li>2. Only permit things, people, services and systems you WANT.</li>
+<li>3. Software-defined configurations.</li>
+<br>
+Make it repeatable, if you can build one you should be able to build n+1.
+Since you can build n+1 build them so that there are no single points of failure. Build them so that you can scale as needed. If you have n+1 you can always update, patch, upgrade, and fix bugs without introducing downtime. Availability is a core principle of security. Be able to build them on the fly and be able to tear them down just as fast. If you don't need it, get rid of it, reduce the risk.<br>
+<br>
+Generate test data for Dev & Test/QA. Prod lives in prod, and nobody plays in prod.<br>
+</div> 
+
+<hr>
+</div>
+<!-- ******************************** -->
+    <footer id="social-media">
+        <ul>
+            <li><a href="https://twitter.com/lnxdork" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://github.com/lnxdork" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://pinterest.com/lnxdork" target="_blank"><i class="fab fa-pinterest-square"></i></a></li>
+            <li><a href="https://keybase.io/lnxdork" target="_blank"><i class="fab fa-keybase"></i></a></li>
+        </ul>
+        <p> &copy; <script>
+                document.write(new Date().getFullYear());
+            </script> lnxdork
+        </p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
