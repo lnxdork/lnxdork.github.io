@@ -4,11 +4,11 @@
 <head>
     <title>lnxdork</title>
     <meta charset="UTF-8">
-    <meta name="description" content="lnxdork: information security workhorse">
+    <meta name="description" content="lnxdork: Equus ex Machina♘ information security workhorse">
     <link rel="icon" href="/images/lnxdork_50pct.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/code.css">
 </head>
@@ -24,44 +24,44 @@
             </ul>
         </nav>
     </header>
-<!-- ******************************** -->
+    <!-- ******************************** -->
 
-<div id="blog">
-    <div class="time">Sunday, April 28, 2019</div>
-    <h4><a href="devsecops.html">DevOps + Security: DevSecOps</a></h4>
-<br>
-    <div class="time">Sunday, April 14, 2019</div>
-    <h4><a href="networking.html">Networking from the Fedora 29 command line.</a></h4>
-</div>
+    <div id="blog">
+        <div class="time">Sunday, April 28, 2019</div>
+        <h4><a href="devsecops.html">DevOps + Security: DevSecOps</a></h4>
+        <br>
+        <div class="time">Sunday, April 14, 2019</div>
+        <h4><a href="networking.html">Networking from the Fedora 29 command line.</a></h4>
+    </div>
 
- <!-- ******************************** -->
- <footer id="social-media">
-    <ul>
-        <li><a href="https://twitter.com/lnxdork" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-        <li><a href="https://github.com/lnxdork" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="https://keybase.io/lnxdork" target="_blank"><i class="fab fa-keybase"></i></a></li>
-    </ul>
-    <p> &copy; <script>
-            document.write(new Date().getFullYear());
-        </script> lnxdork
-    </p>
-</footer>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $('a[href^="#"]').on('click', function (e) {
-            e.preventDefault();
+    <!-- ******************************** -->
+    <footer id="social-media">
+        <ul>
+            <li><a href="https://twitter.com/lnxdork" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href="https://github.com/lnxdork" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://keybase.io/lnxdork" target="_blank"><i class="fab fa-keybase"></i></a></li>
+        </ul>
+        <p> &copy; <script>
+                document.write(new Date().getFullYear());
+            </script> lnxdork
+        </p>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
 
-            var target = this.hash;
-            var $target = $(target);
+                var target = this.hash;
+                var $target = $(target);
 
-            $('html, body').stop().animate({
-                'scrollTop': $target.offset().top - 100
-            }, 900, 'swing', function () {
-                window.location.hash = target - 100;
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>
