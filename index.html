@@ -9,6 +9,22 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome-min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        $(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
+            });
+        });
+    </script>
 </head>
 
 <body id="top">
@@ -60,22 +76,6 @@
             </script> lnxdork
         </p>
     </footer>
-    <script>
-        $(document).ready(function () {
-            $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-
-                var target = this.hash;
-                var $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top - 100
-                }, 900, 'swing', function () {
-                    window.location.hash = target - 100;
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
