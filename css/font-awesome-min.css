@@ -1,0 +1,33 @@
+.fa,
+.fab,
+.fal,
+.far,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1
+}
+
+.fa-github:before {
+    content: "\f09b"
+}
+
+.fa-keybase:before {
+    content: "\f4f5"
+}
+
+.fa-patreon:before {
+    content: "\f3d9"
+}
+
+.fa-twitter-square:before {
+    content: "\f081"
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands"
+}
