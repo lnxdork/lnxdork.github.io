@@ -1,34 +1,17 @@
- <!-- ******************************** -->
- <footer id="social-media">
-     <ul>
-         <li><a href="https://twitter.com/lnxdork" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-         <li><a href="https://github.com/lnxdork" target="_blank"><i class="fab fa-github"></i></a></li>
-         <li><a href="https://keybase.io/lnxdork" target="_blank"><i class="fab fa-keybase"></i></a></li>
-         <li><a href="https://www.patreon.com/lnxdork" target="_blank"><i class="fab fa-patreon"></i></a></li>
-         <!-- https://hackerone.com/lnxdork 
-        https://lnxdork.tumblr.com/ -->
-     </ul>
-     <p> &copy; <script>
-             document.write(new Date().getFullYear());
-         </script> lnxdork
-     </p>
- </footer>
- <script type="text/javascript">
-     $(document).ready(function () {
-         $('a[href^="#"]').on('click', function (e) {
-             e.preventDefault();
+<!-- ******************************** -->
+<footer id="social-media">
+    <ul>
+        <li><a href="https://twitter.com/lnxdork" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://github.com/lnxdork" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://keybase.io/lnxdork" target="_blank"><i class="fab fa-keybase"></i></a></li>
+        <li><a href="https://www.patreon.com/lnxdork" target="_blank"><i class="fab fa-patreon"></i></a></li>
+    </ul>
+    <p> &copy; <script>
+            document.write(new Date().getFullYear());
+        </script> lnxdork
+    </p>
+    <p><a href="privacy.html">Privacy-Policy</a></p>
+</footer>
+</body>
 
-             var target = this.hash;
-             var $target = $(target);
-
-             $('html, body').stop().animate({
-                 'scrollTop': $target.offset().top - 100
-             }, 900, 'swing', function () {
-                 window.location.hash = target - 100;
-             });
-         });
-     });
- </script>
- </body>
-
- </html>
+</html>

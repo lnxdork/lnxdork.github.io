@@ -6,11 +6,28 @@
     <meta charset="UTF-8">
     <meta name="description" content="lnxdork: Index page to the Blog.">
     <meta http-equiv="Content-Security-Policy" content="default-src https:">
-    <link rel="icon" href="/images/lnxdork_50pct.ico">
+    <link rel="icon" href="images/lnxdork_50pct.ico">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link rel="stylesheet" href="/css/font-awesome-min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/code.css">
+    <link rel="stylesheet" href="css/font-awesome-min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $('a[href^="#"]').on('click', function (e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top - 100
+                }, 900, 'swing', function () {
+                    window.location.hash = target - 100;
+                });
+            });
+        });
+    </script>
 </head>
 
 <body id="top">
@@ -49,22 +66,6 @@
             </script> lnxdork
         </p>
     </footer>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('a[href^="#"]').on('click', function (e) {
-                e.preventDefault();
-
-                var target = this.hash;
-                var $target = $(target);
-
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top - 100
-                }, 900, 'swing', function () {
-                    window.location.hash = target - 100;
-                });
-            });
-        });
-    </script>
 </body>
 
 </html>
