@@ -1,3 +1,5 @@
+// This is not used yet. To-Do, remove inline scripts and add content security policy.
+
 function loadPage() {
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
